@@ -14,7 +14,7 @@ int fact(int num)
 int main()
 {
    int i,n;
-   printf("enter the number: ");
+   printf("enter the number-");
    scanf("%d",&n);
 
    i=fact(n);
