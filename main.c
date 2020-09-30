@@ -1,25 +1,25 @@
-#include <stdio.h>
-#include <stdlib.h>
-
-int fact(int num)
-{
-    int res;
-    if(num==1 || num==0)
-        return 1;
-    else
-        res=num *fact(num-1);
-    return res;
-}
-
+#include<stdio.h>
+#include<conio.h>
+int factorial(int x);
 int main()
-{
-   int i,n;
-   printf("enter the number: ");
-   scanf("%d",&n);
-
-   i=fact(n);
-   printf("%d",i);
-
+{   int x;
+    printf("Enter the number which you want for factorial\n");
+    scanf("%d",&x);
+    x=factorial(x);
+    printf("the value of factorial is %d",x);
 
     return 0;
+}
+
+int factorial(int x)
+{
+    if(x==1||x==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return x * factorial(x-1);
+    }
+    
 }
