@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define p printf(
+#define s scanf(
+#define m printf("\n")
 
 int fact(int num)
 {
@@ -14,12 +17,12 @@ int fact(int num)
 int main()
 {
    int i,n;
-   printf("enter the number: ");
-   scanf("%d",&n);
+   p"enter the number: "f;
+   s"%d",&n f;
 
    i=fact(n);
-   printf("%d",i);
-
+   p"%d",i f;
+    m;
 
     return 0;
 }
