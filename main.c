@@ -1,23 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int fact(int num)
+int fact(int x)
 {
-    int res;
+    int result;
     if(num==1 || num==0)
-        return 1;
+        return true;
     else
-        res=num *fact(num-1);
-    return res;
+        result=x *fact(x-1);
+    return result;
 }
 
 int main()
 {
-   int i,n;
+   int i,num;
    printf("enter the number: ");
-   scanf("%d",&n);
+   scanf("%d",&num);
 
-   i=fact(n);
+   i=fact(num);
    printf("%d",i);
 
 
